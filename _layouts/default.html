@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+
+  <!--Include header-->
+  {% include header.html %}
+
+  <!--Include each section from _config.yml-->
+  {% for section in site.sections %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if section.tpl contains ".html" %}
+    {% include sections/{{section.tpl}} %}
+    {% else %}
+    {% capture my-include %}{% include sections/{{section.tpl}} %}{% endcapture %}
+    {{ my-include | markdownify }}
+    {% endif %}
+  {% endfor %}
+
+  <!--Include footer-->
+  {% include footer.html %}
+
+  </body>
+</html>
