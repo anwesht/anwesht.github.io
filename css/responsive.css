@@ -283,7 +283,7 @@
   }
 
   .navbar.navbar-inverse {
-    margin-top: 20px;
+    /*margin-top: 20px;*/  /* at: commented out for fixed top nav bar.*/
     padding-left: 15px;
     padding-right: 15px;
   }
