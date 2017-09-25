@@ -223,6 +223,13 @@
     margin-top: 0;
   }
 
+  #home-slider .slider-hill {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 33.33%;
+  }
+
 }
 
 
