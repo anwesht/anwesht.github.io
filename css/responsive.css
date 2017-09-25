@@ -40,6 +40,26 @@
   }
 }
 
+@media only screen and (max-width : 768px) {
+  #home-slider .slider-hill {
+    /*width: 400px;*/
+    width: 30%;
+  }
+  #home-slider .slider-hill {
+    /*width: 400px;*/
+    top: 50px;
+    width: 90%;
+  }
+
+ /* .contact-info.bottom{
+    text-align: center;
+  }*/
+  #home-slider{
+    /*background: none;*/
+    height: 280px;
+  }
+}
+
 /*md only*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .col-md-4.portfolio-item{
@@ -554,10 +574,24 @@
     font-size: 13px;
     padding: 12px 18px;
   }
+
+  #home-slider .slider-hill {
+    /*width: 400px;*/
+    top: 102px;
+    width: 45%;
+    margin: auto;
+    left: 0;
+  }
 }
 
 @media only screen and (max-width : 480px) {
-
+  #home-slider .slider-hill {
+    /*width: 400px;*/
+    top: 102px;
+    width: 90%;
+    margin: auto;
+    left: 0;
+  }
   /* Pricing Table*/
 
   .single-price, .single-table {
