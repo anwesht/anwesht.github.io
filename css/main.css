@@ -534,7 +534,9 @@ ul.sub-menu {
 *******Home Page******
 **************************/
 #home-slider {
-  background: url(../images/home/slider-bg.png) 0 100% repeat-x;
+  /*background: url(../images/home/slider-bg.png) 0 100% repeat-x;*/
+  background: url(../images/home/skyline-greyscale-full-crop-4.png) repeat-x;
+  background-size: auto 100%;  /* at: Added to scale image to fit height. */
   position: relative;
 }
 
