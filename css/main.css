@@ -18,6 +18,7 @@
     font-size: 14px;
     line-height: 22px;
     color: #000;
+    /*padding-top: 50px;  !*at: adding padding on top for fixed nav-bar*!*/
   }
 
   html {
@@ -122,7 +123,7 @@
   }
 
   .padding-top{
-    padding-top: 90px;
+    padding-top: 50px;  /* at: changed padding from 90 to 50px.*/
   }
 
   .padding-right{
