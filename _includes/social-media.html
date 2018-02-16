@@ -1,0 +1,47 @@
+<!-- Adding social buttons -->
+<ul class="list-inline social-buttons">
+
+    {% if site.author.linkedin_username %}
+    <!-- LinkedIn -->
+    <li>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" target="_blank">
+            <i class="fa fa-linkedin fa-fw"></i>
+        </a>
+    </li>
+    {% endif %}
+
+    {% if site.author.github_username %}
+    <!-- GitHub -->
+    <li>
+        <a href="https://www.github.com/{{ site.author.github_username }}" target="_blank">
+            <i class="fa fa-github fa-fw"></i>
+        </a>
+    </li>
+    {% endif %}
+
+    {% if site.keybase-in-social %}
+    <li><a href="https://keybase.io/{{site.keybase-username}}" target="_blank"><i class="fa fa-key fa-fw"></i></a></li>
+    {% endif %}
+
+    {% if site.author.email %}
+    <!-- Email -->
+    <li>
+        <a href="mailto:{{ site.author.email }}" target="_blank">
+            <i class="fa fa-envelope-o fa-fw"></i>
+        </a>
+    </li>
+    {% endif %}
+
+    <!--<li>-->
+    <!--<a href="https://scholar.google.com/citations?user=bbn3hXQAAAAJ&hl=en" target="_blank">-->
+    <!--<i class="fa fa-bar-chart fa-fw"></i>-->
+    <!--</a>-->
+    <!--</li>-->
+
+    <li>
+        <a href="resources/anwesh_resume.pdf" target="_blank">
+            <i class="fa fa-file-pdf-o fa-fw"></i>
+        </a>
+    </li>
+
+</ul>
