@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/anwesht
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://anwesht.github.io
+  * I am anwesht (https://keybase.io/anwesht) on keybase.
+  * I have a public key ASCl9sNKdiYZHhRMWrxrJhyzXxEvMZFIQ2dLmbBIJbVdgAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a5f6c34a7626191e144c5abc6b261cb35f112f31914843674b99b04825b55d800a",
+      "host": "keybase.io",
+      "kid": "0120a5f6c34a7626191e144c5abc6b261cb35f112f31914843674b99b04825b55d800a",
+      "uid": "606bae3ee4d904489648bbbcc36eb919",
+      "username": "anwesht"
+    },
+    "merkle_root": {
+      "ctime": 1524777498,
+      "hash": "f43d4e064f3b2b74cd895353a612d7375a12b949fb02241972a1b3ddd332b33402ad83555a4dc7c0e6f98336437e939154cb260648500b1e647759b25094b0f9",
+      "hash_meta": "0377542565f6b65a244c650c26535406e5de0645a16ecb8892304e13b7c28a67",
+      "seqno": 2447401
+    },
+    "service": {
+      "entropy": "igkIXiITXQ4AaJzCQOY+WErb",
+      "hostname": "anwesht.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1524777524,
+  "expire_in": 504576000,
+  "prev": "bca87f68288555b9fc268f49c27399854b19a1a85914ea3b6c362a41a7618281",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgpfbDSnYmGR4UTFq8ayYcs18RLzGRSENnS5mwSCW1XYAKp3BheWxvYWTESpcCDMQgvKh/aCiFVbn8Jo9JwnOZhUsZoahZFOo7bDYqQadhgoHEINneI02dNJq6Jyx27412JkHb7ECwX3v9Plp1huiKt1ooAgHCo3NpZ8RAcrtrtAh6CNnuzRmmXHT2KSCMaujmCrysytlwSW+R0UNOjISDEiiTguD3hqNQNKOjquhUqcFRFEFyeaAF/yFrDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP8OdgYPBfwEiR0RCm9biKTfLr9WVAoNBWXKdUwsmS5Vo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/anwesht
+
+==================================================================
