@@ -30,12 +30,42 @@
     </div>
   </div>
 
+<!-- *******************************************************************************************************************
+PUBLICATIONS
+******************************************************************************************************************** -->
   <div class="padding-top container" id="publications">
     <div class="row">
       <div class="col-sm-12">
         <h2 class="title-strong text-left wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">Publications</h2>
-        <!--list from services page.-->
+
+        <!--  Publications list -->
         <ul class="elements">
+          {% for pub in site.data.publications %}
+            <li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i>
+              <strong>
+                <a href="{{ pub.pdf }}" target="_blank">
+                  {{pub.title}}
+                </a>
+              </strong>
+              <span> {{ pub.authors }} </span>
+              <span class="italic">{{ pub.details }}</span>
+
+              <span>
+                  <a href="{{ pub.pdf }}" target="_blank">
+                    <i class="fa fa-file-pdf-o fa-fw"></i>
+                  </a>
+                {% if pub.link %}
+                  <a href="{{ pub.link }}" target="_blank">
+                    <i class="fa fa-link fa-fw"></i>
+                  </a>
+                {% endif %}
+                </span>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <!--list from services page.-->
+        <!--<ul class="elements">
           <li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i>
             Anwesh Tuladhar and Xinming Ou.<strong> <a href="http://www.arguslab.org/tech_reports/2019-1" target="_blank"> SoK: Understanding Security Issues in
               Vehicle Transportation Systems in a Holistic, Context-aware Manner. </a> </strong>
@@ -99,11 +129,11 @@
                 <i class="fa fa-file-pdf-o fa-fw"></i>
               </a>
               <a href="https://ieeexplore.ieee.org/abstract/document/8585568" target="_blank">
-<!--                <i class="fa fa-file-pdf-o fa-fw"></i>-->
+&lt;!&ndash;                <i class="fa fa-file-pdf-o fa-fw"></i>&ndash;&gt;
                 <i class="fa fa-link fa-fw"></i>
               </a>
             </span>
-          </li>
+          </li>-->
          <!-- <li class="wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms"><i class="fa fa-angle-right"></i>
           Anwesh T. <strong> <a href="resources/its-2017.pdf" target="_blank">Intelligent Transportation Systems. </a> </strong>
           <span class="italic">Board of Governors (BoG) meeting, June 2017.</span>
@@ -119,6 +149,9 @@
     </div>
   </div>
 
+<!-- *******************************************************************************************************************
+POSTERS
+******************************************************************************************************************** -->
   <div class="padding-top container" id="posters">
     <div class="row">
       <div class="col-sm-12">
@@ -144,6 +177,9 @@
     </div>
   </div>
 
+<!-- *******************************************************************************************************************
+EDUCATIONS
+******************************************************************************************************************** -->
   <div class="padding-top container" id="education">
     <div class="row">
       <div class="col-sm-12">
@@ -175,6 +211,9 @@
     </div>
   </div>
 
+<!-- *******************************************************************************************************************
+WORK EXPERIENCE
+******************************************************************************************************************** -->
   <div class="padding-top container" id="work">
     <div class="row">
       <div class="col-sm-12">
@@ -232,6 +271,9 @@
     </div>
   </div>
 
+<!-- *******************************************************************************************************************
+PROJECTS
+******************************************************************************************************************** -->
   <div class="padding-top container" id="projects">
     <div class="row">
       <div class="col-sm-12">
