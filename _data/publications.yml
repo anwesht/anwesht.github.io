@@ -4,6 +4,12 @@
   pdf: "http://www.arguslab.org/documents/tech_reports/2019/sok-vehicular-transportation-atuladhar.pdf"
   link: "http://www.arguslab.org/tech_reports/2019-1"
 
+- title: "Data Aggregation and Visualization Technique for Traffic Sensor Data."
+  authors: A. Tuladhar, S. Malla, G. J. Quadri, and P. Rosen.
+  details: Proceedings of the IEEE Conference on Visual Analytics Science and Technology, pp. 239-240, October 2017.
+  pdf: "resources/papers/anwesh-vast_2017.pdf"
+  link: "https://ieeexplore.ieee.org/abstract/document/8585568"
+
 - title: "Multi-Spectral Satellite Image Analysis for Feature Identification and Change Detection VAST Challenge 2017:
     Honorable Mention for Good Facilitation of Single Image Analysis."
   authors: S. Malla, A. Tuladhar, G. J. Quadri, and P. Rosen.
@@ -17,8 +23,3 @@
   details: Proceedings of the IEEE Conference on Visual Analytics Science and Technology, pp. 217-218, October 2017.
   link: "https://ieeexplore.ieee.org/abstract/document/8585678"
 
-- title: "Data Aggregation and Visualization Technique for Traffic Sensor Data."
-  authors: A. Tuladhar, S. Malla, G. J. Quadri, and P. Rosen.
-  details: Proceedings of the IEEE Conference on Visual Analytics Science and Technology, pp. 239-240, October 2017.
-  pdf: "resources/papers/anwesh-vast_2017.pdf"
-  link: "https://ieeexplore.ieee.org/abstract/document/8585568"

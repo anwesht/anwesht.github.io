@@ -38,6 +38,7 @@ PUBLICATIONS
       <div class="col-sm-12">
         <h2 class="title-strong text-left wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">Publications</h2>
 
+        <!--list from services page.-->
         <!--  Publications list -->
         <ul class="elements">
           {% for pub in site.data.publications %}
@@ -63,82 +64,6 @@ PUBLICATIONS
             </li>
           {% endfor %}
         </ul>
-
-        <!--list from services page.-->
-        <!--<ul class="elements">
-          <li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i>
-            Anwesh Tuladhar and Xinming Ou.<strong> <a href="http://www.arguslab.org/tech_reports/2019-1" target="_blank"> SoK: Understanding Security Issues in
-              Vehicle Transportation Systems in a Holistic, Context-aware Manner. </a> </strong>
-            <span class="italic">In submission.</span>
-            <span>
-              <a href="http://www.arguslab.org/documents/tech_reports/2019/sok-vehicular-transportation-atuladhar.pdf" target="_blank">
-                <i class="fa fa-file-pdf-o fa-fw"></i>
-              </a>
-              <a href="http://www.arguslab.org/tech_reports/2019-1" target="_blank">
-                <i class="fa fa-link fa-fw"></i>
-              </a>
-            </span>
-          </li>
-
-          <li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i>
-            S. Malla, A. Tuladhar, G. J. Quadri, and P. Rosen,
-            <strong> <a href="resources/papers/sulav-vast_2017.pdf" target="_blank"> Multi-Spectral Satellite
-              Image Analysis for Feature Identification and Change Detection VAST Challenge 2017: Honorable Mention for
-              Good Facilitation of Single Image Analysis. </a>
-            </strong>
-            <span class="italic">Proceedings of the IEEE Conference on Visual Analytics Science and Technology,
-              pp. 205-206, October 2017.
-            </span>
-            <span>
-              <a href="resources/papers/sulav-vast_2017.pdf" target="_blank">
-                  <i class="fa fa-file-pdf-o fa-fw"></i>
-              </a>
-              <a href="https://ieeexplore.ieee.org/abstract/document/8585482" target="_blank">
-                <i class="fa fa-link fa-fw"></i>
-              </a>
-            </span>
-          </li>
-
-          <li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i>
-            G. J. Quadri, A. Tuladhar, S. Malla, and P. Rosen,
-            <strong> <a href="resources/papers/ghulam_jilani-vast_2017.pdf" target="_blank"> Visual Analytic Design for
-              Characterizing Air-Sampling Sensor Performance and Operation. </a> </strong>
-            <span class="italic">Proceedings of the IEEE Conference on Visual Analytics Science and Technology,
-              pp. 217-218, October 2017.
-            </span>
-            <span>
-              <a href="resources/papers/ghulam_jilani-vast_2017.pdf" target="_blank">
-                <i class="fa fa-file-pdf-o fa-fw"></i>
-              </a>
-              <a href="https://ieeexplore.ieee.org/abstract/document/8585678" target="_blank">
-                <i class="fa fa-link fa-fw"></i>
-              </a>
-            </span>
-          </li>
-
-          <li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i>
-            A. Tuladhar, S. Malla, G. J. Quadri, and P. Rosen,
-            <strong> <a href="resources/papers/anwesh-vast_2017.pdf" target="_blank">Data Aggregation and
-              Visualization Technique for Traffic Sensor Data. </a>
-            </strong>
-            <span class="italic">Proceedings of the IEEE Conference on Visual Analytics Science and Technology,
-              pp. 239-240, October 2017.
-            </span>
-            <span>
-              <a href="resources/papers/anwesh-vast_2017.pdf" target="_blank">
-                <i class="fa fa-file-pdf-o fa-fw"></i>
-              </a>
-              <a href="https://ieeexplore.ieee.org/abstract/document/8585568" target="_blank">
-&lt;!&ndash;                <i class="fa fa-file-pdf-o fa-fw"></i>&ndash;&gt;
-                <i class="fa fa-link fa-fw"></i>
-              </a>
-            </span>
-          </li>-->
-         <!-- <li class="wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms"><i class="fa fa-angle-right"></i>
-          Anwesh T. <strong> <a href="resources/its-2017.pdf" target="_blank">Intelligent Transportation Systems. </a> </strong>
-          <span class="italic">Board of Governors (BoG) meeting, June 2017.</span>
-          </li>-->
-
           <!--
           <li class="wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms"><i class="fa fa-angle-right"></i> scrambled it to make a type specimen book.</li>
           <li class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms"><i class="fa fa-angle-right"></i> scrambled it to make a type specimen book.</li>
@@ -156,23 +81,51 @@ POSTERS
     <div class="row">
       <div class="col-sm-12">
         <h2 class="title-strong text-left wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">Posters and Presentations</h2>
+
         <!--list from services page.-->
+        <!--  Publications list -->
         <ul class="elements">
+          {% for pub in site.data.posters %}
           <li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i>
+            <strong>
+              <a href="{{ pub.pdf }}" target="_blank">
+                {{pub.title}}
+              </a>
+            </strong>
+            <span> {{ pub.authors }} </span>
+            <span class="italic">{{ pub.details }}</span>
+
+            <span>
+                  <a href="{{ pub.pdf }}" target="_blank">
+                    <i class="fa fa-file-pdf-o fa-fw"></i>
+                  </a>
+                {% if pub.link %}
+                  <a href="{{ pub.link }}" target="_blank">
+                    <i class="fa fa-link fa-fw"></i>
+                  </a>
+                {% endif %}
+                </span>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <!--list from services page.-->
+<!--        <ul class="elements">-->
+          <!--<li class="wow fadeInUp" data-wow-duration="900ms" data-wow-delay="100ms"><i class="fa fa-angle-right"></i>
             Anwesh T. <strong> <a href="resources/iise-2018.pdf" target="_blank">Cyber Security Challenges in Transportation Systems. </a> </strong>
             <span class="italic">Institute of Industrial and Systems Engineers (IISE), 2018.</span>
           </li>
           <li class="wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms"><i class="fa fa-angle-right"></i>
             Anwesh T. <strong> <a href="resources/its-2017.pdf" target="_blank">Intelligent Transportation Systems. </a> </strong>
             <span class="italic">Board of Governors (BoG) meeting, June 2017.</span>
-          </li>
+          </li>-->
 
           <!--
           <li class="wow fadeInUp" data-wow-duration="800ms" data-wow-delay="200ms"><i class="fa fa-angle-right"></i> scrambled it to make a type specimen book.</li>
           <li class="wow fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms"><i class="fa fa-angle-right"></i> scrambled it to make a type specimen book.</li>
           <li class="wow fadeInUp" data-wow-duration="600ms" data-wow-delay="400ms"><i class="fa fa-angle-right"></i> scrambled it to make a type specimen book.</li>
           <li class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms"><i class="fa fa-angle-right"></i> but also the leap into electronic typesetting.</li>-->
-        </ul>
+<!--        </ul>-->
       </div>
     </div>
   </div>
